@@ -24,7 +24,24 @@ class TestPages extends StatelessWidget {
                     colors: [Colors.blue, Colors.red],
                   ),
                 ),
-                child: Text("text", style: TextStyle(fontSize: 20.0)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(width: 4.0, color: Colors.white),
+                        ),
+                        child: CircleAvatar(
+                          radius: 60.0,
+                          backgroundImage: AssetImage("assetName"),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
             Card(
