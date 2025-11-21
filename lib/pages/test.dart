@@ -11,16 +11,20 @@ class TestPages extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-
-          // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Card(
-              color: Colors.lightBlueAccent,
               elevation: 8,
-              child: ListTile(
-                leading: Icon(Icons.account_circle, size: 50),
-                title: Text("Latihan Card 1"),
-                subtitle: Text("Ini adalah contoh latihan card pertama"),
+              shadowColor: Colors.red,
+              clipBehavior: Clip.antiAlias,
+              child: Container(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topRight,
+                    end: Alignment.bottomLeft,
+                    colors: [Colors.blue, Colors.red],
+                  ),
+                ),
+                child: Text("text", style: TextStyle(fontSize: 20.0)),
               ),
             ),
             Card(
