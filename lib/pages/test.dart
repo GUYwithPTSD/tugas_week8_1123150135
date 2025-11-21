@@ -11,7 +11,17 @@ class TestPages extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.all(20.0),
           child: Column(
-            children: [Card(color: Colors.lightBlueAccent, elevation: 8)],
+            children: [
+              Card(
+                color: Colors.lightBlueAccent,
+                elevation: 8,
+                child: ListTile(
+                  leading: Icon(Icons.account_circle, size: 50),
+                  title: Text("Card 1"),
+                  subtitle: Text("contoh card 1"),
+                ),
+              ),
+            ],
           ),
         ),
       ),
