@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
+class TestPages extends StatelessWidget {
+  const TestPages({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,10 +10,11 @@ class MyWidget extends StatelessWidget {
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(20.0),
-          child: const Column(children: []),
+          child: Column(
+            children: [Card(color: Colors.lightBlueAccent, elevation: 8)],
+          ),
         ),
       ),
     );
-    ;
   }
 }
