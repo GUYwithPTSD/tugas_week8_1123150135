@@ -24,7 +24,7 @@ class TestPages extends StatelessWidget {
                     colors: [Colors.blue, Colors.red],
                   ),
                 ),
-                child: Row(
+                child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Padding(
@@ -49,7 +49,7 @@ class TestPages extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(height: 10.0),
+                    SizedBox(width: 10.0),
                     Text(
                       "text",
                       style: TextStyle(
@@ -62,6 +62,7 @@ class TestPages extends StatelessWidget {
                 ),
               ),
             ),
+
             Card(
               elevation: 8,
               color: Colors.red,
