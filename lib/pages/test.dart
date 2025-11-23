@@ -72,6 +72,64 @@ class TestPages extends StatelessWidget {
                         ),
                       ),
                     ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        SizedBox(
+                          height: 40,
+                          child: VerticalDivider(
+                            thickness: 1,
+                            color: Colors.black,
+                            width: 1,
+                          ),
+                        ),
+                        Text(
+                          "text",
+                          style: TextStyle(
+                            fontSize: 11.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 40,
+                          child: VerticalDivider(
+                            thickness: 1,
+                            color: Colors.black,
+                            width: 1,
+                          ),
+                        ),
+                        Text(
+                          "text",
+                          style: TextStyle(
+                            fontSize: 11.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 40,
+                          child: VerticalDivider(
+                            thickness: 1,
+                            color: Colors.black,
+                            width: 1,
+                          ),
+                        ),
+                        Text(
+                          "text",
+                          style: TextStyle(
+                            fontSize: 11.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 40,
+                          child: VerticalDivider(
+                            thickness: 1,
+                            color: Colors.black,
+                            width: 1,
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
