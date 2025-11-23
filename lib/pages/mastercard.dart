@@ -6,7 +6,7 @@ class MasterCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Master Card"), actions: []),
+      appBar: AppBar(title: const Text("Master Card")),
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(16.0),
