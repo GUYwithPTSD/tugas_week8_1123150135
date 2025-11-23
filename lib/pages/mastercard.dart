@@ -52,6 +52,18 @@ class MasterCard extends StatelessWidget {
                             ),
 
                             const SizedBox(height: 20),
+
+                            const Text(
+                              "1123 1501 3511 2315",
+                              style: TextStyle(
+                                fontSize: 22.0,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                letterSpacing: 2.0,
+                              ),
+                            ),
+
+                            const SizedBox(height: 25),
                           ],
                         ),
                       ),
