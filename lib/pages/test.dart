@@ -36,7 +36,9 @@ class TestPages extends StatelessWidget {
                         ),
                         child: CircleAvatar(
                           radius: 60.0,
-                          backgroundImage: AssetImage("assetName"),
+                          backgroundImage: AssetImage(
+                            "../Assets/Images/profile.png",
+                          ),
                         ),
                       ),
                     ),
