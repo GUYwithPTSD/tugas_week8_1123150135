@@ -64,6 +64,18 @@ class MasterCard extends StatelessWidget {
                             ),
 
                             const SizedBox(height: 25),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                const Text(
+                                  "Ivan Darma Saputra",
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ],
                         ),
                       ),
