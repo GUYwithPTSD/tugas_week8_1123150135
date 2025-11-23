@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:week8_mobileapp/pages/test.dart';
+import 'package:week8_mobileapp/pages/mastercard.dart';
+// import 'package:week8_mobileapp/pages/test.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,6 +11,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: TestPages());
+    return MaterialApp(home: MasterCard());
   }
 }

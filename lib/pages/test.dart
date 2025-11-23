@@ -6,9 +6,9 @@ class TestPages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("contoh dashboard")),
+      appBar: AppBar(title: Text("contoh dashboard")),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -28,11 +28,18 @@ class TestPages extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(8.0),
                       child: Container(
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(width: 4.0, color: Colors.white),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withValues(alpha: 0.2),
+                              blurRadius: 10,
+                              offset: Offset(0, 5),
+                            ),
+                          ],
                         ),
                         child: CircleAvatar(
                           radius: 60.0,
@@ -40,6 +47,15 @@ class TestPages extends StatelessWidget {
                             "../Assets/Images/profile.png",
                           ),
                         ),
+                      ),
+                    ),
+                    SizedBox(height: 10.0),
+                    Text(
+                      "text",
+                      style: TextStyle(
+                        fontSize: 26.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
                       ),
                     ),
                   ],
