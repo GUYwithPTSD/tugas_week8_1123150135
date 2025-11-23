@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:week8_mobileapp/pages/mastercard.dart';
 
 class TestPages extends StatelessWidget {
   const TestPages({super.key});
@@ -197,7 +198,12 @@ class TestPages extends StatelessWidget {
                 backgroundColor: Colors.black,
                 foregroundColor: Colors.white,
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MasterCard()),
+                );
+              },
               child: const Text("Click Me!"),
             ),
           ],
