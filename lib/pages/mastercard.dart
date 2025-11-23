@@ -120,6 +120,26 @@ class MasterCard extends StatelessWidget {
                                     ),
                                   ],
                                 ),
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: const [
+                                    Text(
+                                      "CVV",
+                                      style: TextStyle(
+                                        fontSize: 12.0,
+                                        color: Colors.white70,
+                                      ),
+                                    ),
+                                    Text(
+                                      "6986",
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ],
                             ),
                           ],
