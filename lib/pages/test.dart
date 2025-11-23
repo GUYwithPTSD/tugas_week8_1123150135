@@ -51,11 +51,25 @@ class TestPages extends StatelessWidget {
                     ),
                     SizedBox(width: 10.0),
                     Text(
-                      "text",
+                      "Ivan Darma Saputra",
                       style: TextStyle(
                         fontSize: 26.0,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Text(
+                        "freshg raduated IT developer",
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
                     ),
                   ],
