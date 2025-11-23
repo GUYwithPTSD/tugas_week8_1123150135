@@ -97,6 +97,31 @@ class MasterCard extends StatelessWidget {
                                 ),
                               ],
                             ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Expiry Date",
+                                      style: TextStyle(
+                                        fontSize: 12.0,
+                                        color: Colors.white70,
+                                      ),
+                                    ),
+                                    Text(
+                                      "24/2000",
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ],
                         ),
                       ),
