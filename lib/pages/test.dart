@@ -64,7 +64,7 @@ class TestPages extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Text(
-                        "freshg raduated IT developer",
+                        "fresh graduated IT developer",
                         style: TextStyle(
                           fontSize: 16,
                           color: Colors.white,
@@ -72,63 +72,98 @@ class TestPages extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        SizedBox(
-                          height: 40,
-                          child: VerticalDivider(
-                            thickness: 1,
-                            color: Colors.black,
-                            width: 1,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              Text(
+                                "100",
+                                style: TextStyle(
+                                  fontSize: 22.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              SizedBox(height: 3),
+                              Text(
+                                "Follower",
+                                style: TextStyle(
+                                  fontSize: 14.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white.withValues(alpha: 0.5),
+                                ),
+                              ),
+                            ],
                           ),
-                        ),
-                        Text(
-                          "text",
-                          style: TextStyle(
-                            fontSize: 11.0,
-                            fontWeight: FontWeight.bold,
+                          Row(
+                            children: [
+                              SizedBox(
+                                height: 40,
+                                child: VerticalDivider(
+                                  thickness: 1,
+                                  color: Colors.black,
+                                  width: 20,
+                                ),
+                              ),
+                              Column(
+                                children: [
+                                  Text(
+                                    "25 Years",
+                                    style: TextStyle(
+                                      fontSize: 22.0,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  SizedBox(height: 3),
+                                  Text(
+                                    "Experience",
+                                    style: TextStyle(
+                                      fontSize: 14.0,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white.withValues(
+                                        alpha: 0.5,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(
+                                height: 40,
+                                child: VerticalDivider(
+                                  thickness: 1,
+                                  color: Colors.black,
+                                  width: 20,
+                                ),
+                              ),
+                            ],
                           ),
-                        ),
-                        SizedBox(
-                          height: 40,
-                          child: VerticalDivider(
-                            thickness: 1,
-                            color: Colors.black,
-                            width: 1,
+                          Column(
+                            children: [
+                              Text(
+                                "Latest Major",
+                                style: TextStyle(
+                                  fontSize: 22.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              SizedBox(height: 3),
+                              Text(
+                                "S1 SE",
+                                style: TextStyle(
+                                  fontSize: 14.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white.withValues(alpha: 0.5),
+                                ),
+                              ),
+                            ],
                           ),
-                        ),
-                        Text(
-                          "text",
-                          style: TextStyle(
-                            fontSize: 11.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 40,
-                          child: VerticalDivider(
-                            thickness: 1,
-                            color: Colors.black,
-                            width: 1,
-                          ),
-                        ),
-                        Text(
-                          "text",
-                          style: TextStyle(
-                            fontSize: 11.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 40,
-                          child: VerticalDivider(
-                            thickness: 1,
-                            color: Colors.black,
-                            width: 1,
-                          ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ],
                 ),
