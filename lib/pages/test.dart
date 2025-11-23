@@ -42,7 +42,7 @@ class TestPages extends StatelessWidget {
                           ],
                         ),
                         child: CircleAvatar(
-                          radius: 60.0,
+                          radius: 30.0,
                           backgroundImage: AssetImage(
                             "../Assets/Images/profile.png",
                           ),
@@ -169,46 +169,25 @@ class TestPages extends StatelessWidget {
                 ),
               ),
             ),
-
             Card(
-              elevation: 8,
-              color: Colors.red,
-              child: Padding(
-                padding: EdgeInsets.all(12.0),
-                child: Text(
-                  "Card with color",
-                  style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
-                ),
-              ),
-            ),
-
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12.0),
-                color: Colors.blue,
-              ),
-              child: Text(
-                "Container with color",
-                style: TextStyle(fontSize: 16.0),
-              ),
-            ),
-
-            Card(
-              elevation: 8,
-              color: Colors.grey,
+              elevation: 5.0,
+              margin: EdgeInsets.all(16.0),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
                 children: [
-                  Text("Tittle", style: TextStyle(fontSize: 20)),
-                  SizedBox(height: 12),
-                  Text(
-                    "Laga Terakhir Midoriya Izuku",
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.grey[700],
-                      height: 1.5,
+                  ListTile(
+                    leading: Icon(Icons.install_desktop_rounded, size: 50),
+                    title: Text('melihat master card'),
+                    subtitle: Text(
+                      'klik master buton dibawah untuk melihat master card',
                     ),
-                    textAlign: TextAlign.justify,
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(16.0),
+                    child: Text(
+                      'Card dapat di isi berbagai widget seperti text, '
+                      'image, button, dan lainnya.',
+                    ),
                   ),
                 ],
               ),
