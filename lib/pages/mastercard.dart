@@ -6,20 +6,58 @@ class MasterCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Dashboard"), actions: const []),
+      appBar: AppBar(title: const Text("Master Card"), actions: []),
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(16.0),
           child: Stack(
             children: [
-              // Background Card
-              Container(
-                width: 30,
-                height: 30,
-                decoration: const BoxDecoration(
-                  color: Color(0xFFEB001B),
-                  shape: BoxShape.circle,
-                ),
+              Column(
+                children: [
+                  Card(
+                    elevation: 8,
+                    shadowColor: Colors.blue,
+                    clipBehavior: Clip.antiAlias,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16.0),
+                    ),
+                    child: Container(
+                      height: 230,
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                          colors: [Colors.blue[700]!, Colors.blue[900]!],
+                        ),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: const [
+                                Icon(
+                                  Icons.credit_card,
+                                  color: Colors.white,
+                                  size: 32,
+                                ),
+                                Icon(
+                                  Icons.contactless_outlined,
+                                  color: Colors.white,
+                                  size: 32,
+                                ),
+                              ],
+                            ),
+
+                            const SizedBox(height: 20),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
